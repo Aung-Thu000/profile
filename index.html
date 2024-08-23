@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Gold Calculator</h1>
+    <div id="goldCalculator">
+        <div >
+            <label for="weighInGram">
+                Weight of Gold(gram):
+            </label>
+            <input type="namber"  id="weightInGram" required>
+        </div>
+        <div >
+            <label for="salePrice">
+                Sale Price:
+            </label>
+            <input type="namber"  id="salePrice" required>
+        </div>
+        <div >
+            <label for="marketPrice">
+               Market Price:
+            </label>
+            <input type="namber"  id="marketPrice" required>
+        </div>
+        <button onclick="calculate()">Calculate</button>
+    </div>
+    <div class="result-container">
+        <h2>Result</h2>
+        <p> Gold Weight:  <span id="weightInPae">0</span> Pae</p>
+        <p> Gold Price:  <span id="actualPrice">0</span> Kyats</p>
+        <p>Service Charges:  <span id="serviceCharge">0</span> Kyats</p>
+
+    </div>
+</div>   
+
+    <script src="script.js"></script>
+</body>
+</html>
